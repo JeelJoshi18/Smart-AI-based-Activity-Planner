@@ -1,0 +1,113 @@
+/* MODAL */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-card {
+  background: #2f343e;
+  padding: 20px 28px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  width: 90%;
+  max-width: 400px;
+  color: white;
+  text-align: center;
+}
+
+.modal-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+  background-color: #3d4451;
+  color: white;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.modal-buttons button {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.save-btn { background-color: #4caf50; color: white; }
+.delete-btn { background-color: #e53935; color: white; }
+.cancel-btn { background-color: #555; color: white; }
+
+/* CALENDAR EVENT STYLING */
+.fc-event,
+.planner-event {
+  border: none !important;
+  border-radius: 10px !important;
+  color: #111 !important; /* 🔥 Black text for better contrast */
+  font-weight: 600 !important;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.25s ease;
+  white-space: normal;
+  padding: 0 !important;
+}
+
+/* Time and title inside */
+.evt-time {
+  font-size: 0.8rem;
+  color: #000 !important; /* ensure visible time text */
+  opacity: 0.9;
+}
+
+.evt-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #000 !important; /* ensure visible title text */
+}
+
+
+.fc-event:hover,
+.planner-event:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+}
+
+/* Internal text styles */
+.evt-wrap {
+  border-radius: 8px;
+  padding: 4px 6px;
+}
+.evt-time {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+.evt-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Toolbar */
+.fc .fc-toolbar-title {
+  color: #eaf4ff !important;
+  font-size: 1.4em !important;
+  font-weight: 600 !important;
+}
+
+/* Current time line */
+.fc-timegrid-now-indicator-line {
+  border-color: #ff5555 !important;
+  border-width: 2px !important;
+}
